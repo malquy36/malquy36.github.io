@@ -72,10 +72,16 @@ section {
     left: 10px; 
 }
 
-.carousel-item {
-    transition-duration: 1s;
-}
+.carousel-item > img {
+    object-fit: scale-down;
+    height: 50vh;
+    width: 100%;
+  }
 
+.carousel-caption > h5 , .carousel-caption > p {
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 3px 3px black
+}
 .carousel {
     width: 500px;
 }
