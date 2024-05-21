@@ -7,7 +7,10 @@
     <link rel="shortcut icon" href="img/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="./static/js/contact.js"></script>
     <style>
         body {
           background-image: url(https://media.gettyimages.com/id/667138246/es/foto/argentina-buenos-aires-amanecer-en-el-centro-con-hora-punta.jpg?s=2048x2048&w=gi&k=20&c=mHncRiyTa0eFSXCuf2E6uAO6OcQzwMfNnC0TJYfmjmg=);
@@ -49,7 +52,6 @@
             </div>
           </nav>
     </header>
-    <main>
         <section>
             <h1>Formulario de Contacto</h1>
             <form id="formulario" action="mensaje.html" onsubmit="return validarFormulario();">
@@ -84,20 +86,15 @@
                 
             </div>
                 <div class="btn-wrapper">
-                <input type="submit" value="Enviar">
+                <input class="btn btn-primary" type="submit" value="Enviar">
                 </div>
                 <div id="mensajeAgradecimiento" style="display: none;">¡Gracias por contactarnos! Responderemos a la brevedad.</div>
             </form>
         </section>
-    </main>
-    
     <footer>
         <p>Derechos de autor &copy; 2024 Turismo en Buenos Aires</p>
     </footer>
 <!-- agrego librerías y CSS de bootstrap necesarias para la navbar -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    <script src="./static/js/contact.js"></script>
+
   </body>
 </html>
