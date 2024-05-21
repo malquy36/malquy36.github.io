@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Turismo en Buenos Aires</title>
+    <link rel="shortcut icon" href="img\favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="./static/js/contact.js"></script>
+    <style>
+        body {
+          background-image: url(https://media.gettyimages.com/id/667138246/es/foto/argentina-buenos-aires-amanecer-en-el-centro-con-hora-punta.jpg?s=2048x2048&w=gi&k=20&c=mHncRiyTa0eFSXCuf2E6uAO6OcQzwMfNnC0TJYfmjmg=);
+        }
+        
+        section {
+          color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Navbar de bootstrap, 3 puntos de corte  expand-sm/md/lg-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="san-antonio-de-areco.html">San Antonio de Areco</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="la-plata.html">La Plata</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="lujan.html">Luján</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="delta-del-tigre.html">Delta del Tigre</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="contact.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Formulario de Contacto</h2>
+            <form id="formulario" action="mensaje.html" onsubmit="return validarFormulario();">
+                <div class="formWrapper">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" ><label id="msgErrorNombre" class="msgError"></label>
+                <br><br>
+
+                <label for="telefono">Celular:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="1145678901" >
+                <label id="msgErrorTelefono" class="msgError"></label>
+                <br><br>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="text" id="email" name="email" >
+                <label id="msgErrorEmail" class="msgError"></label>
+                <br><br>
+               
+                <label for="motivo">Motivo de contacto:</label>
+                <select id="motivo" name="motivo" >
+                    <option value="">Selecciona un motivo</option>
+                    <option value="consulta">Consulta</option>
+                    <option value="reserva">Reserva</option>
+                    <option value="reclamo">Reclamo</option>
+                </select>
+                <label id="msgErrorMotivo" class="msgError"></label>
+                <br><br>
+    
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+                <label id="msgErrorComentario" class="msgError"></label>
+                <br><br>
+            </div>
+                <div class="btn-wrapper">
+                <input type="submit" value="Enviar">
+                </div>
+                <div id="mensajeAgradecimiento" style="display: none;">¡Gracias por contactarnos! Responderemos a la brevedad.</div>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Derechos de autor &copy; 2024 Turismo en Buenos Aires</p>
+    </footer>
+</body>
+
+<!-- agrego librerías y CSS de bootstrap necesarias para la navbar -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+</html>
