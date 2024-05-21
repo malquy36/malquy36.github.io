@@ -15,7 +15,7 @@ function validarFormulario() {
 
     valor = document.getElementById("telefono").value;
         
-        if( isNaN(valor) || valor.length!=10) 
+        if( isNaN(valor) || valor.length<=9) 
         {
             document.getElementById('msgErrorTelefono').innerHTML = "¡Ingresá un celular válido!";
             elemento = document.getElementById('telefono');
@@ -63,7 +63,7 @@ function validarFormulario() {
         return false;
     }
     document.getElementById('msgErrorComentario').innerHTML = "";
-
+    
     return true;          
 }
  
