@@ -183,6 +183,28 @@ form label {
     font-size: small;
 }
 
+/* Estilos para la barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+
+/* Estilo del riel de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+    background-color: rgb(220, 220, 220);
+}
+
+/* Estilo del pulgar de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+/* Estilo del pulgar de la barra de desplazamiento al pasar el ratón */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 /* Estilos específicos para la clase "caja google" */
 .caja.google {
     --uv-styles-color-outline: #3c4043;
