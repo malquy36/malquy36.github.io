@@ -36,7 +36,6 @@ section {
 
 #clima-info p {
     margin: 0.5rem 0;
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.196)
 }
 
 #clima-info i {
@@ -64,7 +63,6 @@ section {
 
 .descripcion {
     margin-top: 20px;
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.196)
 }
 
 .map {
