@@ -125,6 +125,7 @@ form label {
     margin:0 !important;
 }
 
+
 /* form input, form select, form textarea {
     width: 250px;
     padding: 5px;
@@ -154,7 +155,10 @@ li {
 .navbar {
     background-color: #182a3f;
 }
-
+/*padding para centrar navbar*/
+#navbarNav{
+    padding: 0 10% 0 0;
+}
 .msgError {
     color:rgb(138, 0, 108);
     font-weight: bold;

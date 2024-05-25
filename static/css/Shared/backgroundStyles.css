@@ -1,0 +1,13 @@
+body {
+    background-image: url(https://media.gettyimages.com/id/667138246/es/foto/argentina-buenos-aires-amanecer-en-el-centro-con-hora-punta.jpg?s=2048x2048&w=gi&k=20&c=mHncRiyTa0eFSXCuf2E6uAO6OcQzwMfNnC0TJYfmjmg=);
+    background-position: -1000px -10px;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: 1060px) {
+    body{background-position: -600px -10px;}          
+  }
+  @media (min-width: 1260px) {
+    body{background-position: 0 0;}
+    
+  }
