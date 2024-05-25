@@ -1,5 +1,4 @@
 function obtenerClima(location) {
-    debugger;
     location = location.replace(' ','%20');
     // Hacer una solicitud a la API de clima (sustituye 'API_KEY' con tu propia clave)
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=0f74f5f77543aa793dec16603ef48b81&lang=es&units=metric`)
